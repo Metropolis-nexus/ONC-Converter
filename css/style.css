@@ -1,0 +1,45 @@
+body {
+    background-color: #1F2125;
+    color: #DADADB;
+}
+
+a{
+    color: inherit;
+}
+
+#output {
+    background-color: #26282D;
+}
+
+#log {
+    width: 50em;
+    min-height: 7em;
+    border: 1px solid grey;
+    overflow-x: auto;
+    background-color: #26282D;
+}
+
+#log>p {
+    margin: 0px;
+}
+
+input::file-selector-button {
+    color: #DADADB;
+    background-color: #26282D;
+    border: thin solid grey;
+    border-radius: 3px;
+}
+
+.input_field {
+    color: #DADADB;
+    background-color: #26282D;
+    border: thin solid grey;
+    border-radius: 3px;
+}
+
+.button {
+    color: #DADADB;
+    background-color: #26282D;
+    border: thin solid grey;
+    border-radius: 3px;
+}

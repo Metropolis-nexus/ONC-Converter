@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>OpenVPN to ONC Converter</title>
+  <meta name="description" content="Convert OpenVPN config files to ONC files">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/conversion.js"></script>
+</head>
+
+<body onload="setHandler()">
+  <h1>OpenVPN to ONC Converter</h1>
+  <div>
+    <p><b>Input</b></p>
+    <ul>
+      <li>
+        <label for="connname">Name for connection:</label>
+        <input type="text" id="connname" class="input_field">
+      </li>
+      <li>
+        <label for="inputopenvpn">OpenVPN configuration file:</label>
+        <input type="file" id="inputopenvpn">
+      </li>
+      <li>
+        <label for="inputcertificates">Certificates and keys (can be multiple files):</label>
+        <input type="file" id="inputcertificates" multiple>
+      </li>
+    </ul>
+    <button id="convertbutton" type="button" class="button">Convert</button>
+  </div>
+  <div>
+    <p><b>Output</b> (save this as a .onc file)</p>
+    <textarea readonly id="output" wrap="off" rows="20" cols="98"></textarea>
+  </div>
+  <div>
+    <p>Debugging info:</p>
+    <div id="log"></div>
+  </div>
+  <div>
+    <p><b>Notes</b></p>
+    <ul>
+      <li>This converter can only put 1 IP address in the .onc file.</li>
+      <li>Import the .onc file in <a href="chrome://network">chrome://network</a></li>
+      <li><a href="https://github.com/tommytran732/ONC-Converter">Source Code</a></li>
+    </ul>
+  </div>
+</body>
+
+</html>
