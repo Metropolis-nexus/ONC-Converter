@@ -19,4 +19,4 @@
   X-XSS-Protection: 0
   X-Frame-Options : DENY
 
-  Content-Security-Policy: default-src 'none'; script-src-attr 'unsafe-inline'; script-src-elem 'self'; style-src 'self'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests; base-uri 'none'
+  Content-Security-Policy: default-src 'none'; script-src-elem 'self' 'unsafe-inline'; style-src 'self'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests; base-uri 'none'
